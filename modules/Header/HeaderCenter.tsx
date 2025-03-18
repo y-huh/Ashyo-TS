@@ -26,7 +26,7 @@ const HeaderCenter = () => {
           <div className="flex items-center">
             <input
               type="text"
-              placeholder="What are you looking for?"
+              placeholder={t("placeholder")}
               className="h-[48px] w-[400px] px-4 py-2 bg-[#F5F7FA] border-none outline-none rounded-l-[6px]"
             />
             <Button extraClass="!w-[60px] !h-[48px] !p-0 !rounded-l-none">

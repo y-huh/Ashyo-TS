@@ -7,6 +7,8 @@
 
   },
   "HeaderCenterContent":{
-    "category":"Катерогия"
+    "category":"Катерогия",
+    "placeholder":"Что вы ищете?"
   }
+  
 }

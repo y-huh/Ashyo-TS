@@ -7,7 +7,9 @@
 
   },
   "HeaderCenterContent":{
-    "category":"Turkum"
+    "category":"Turkum",
+    "placeholder":"Nimani qidirmoqchisiz?"
+
   }
   
 }
