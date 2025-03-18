@@ -23,7 +23,7 @@ const HeaderCenter = () => {
             <ArrowDownIcon />
           </Button>
 
-          <div className="flex items-center">
+          <form className="flex items-center">
             <input
               type="text"
               placeholder={t("placeholder")}
@@ -32,7 +32,7 @@ const HeaderCenter = () => {
             <Button extraClass="!w-[60px] !h-[48px] !p-0 !rounded-l-none">
               <SearchIcon />
             </Button>
-          </div>
+          </form>
         </div>
 
         <div className="flex items-center gap-4">
