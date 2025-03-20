@@ -1,10 +1,11 @@
-import { MouseEventHandler, ReactNode } from "react";
+import { FocusEventHandler, MouseEventHandler, ReactNode } from "react";
 
 export interface ButtonType {
-  extraClass?: string;
-  children: ReactNode;
-  icon?: ReactNode;
-  iconPosition?: string;
-  onClick?: MouseEventHandler<HTMLButtonElement>;
-  bage?:number
+    extraClass?:string,
+    children:ReactNode,
+    icon?:ReactNode,
+    iconPosition?:"left" | "right",
+    onClick?:MouseEventHandler<HTMLButtonElement>,
+    bage?:number,
+    onBlur?:FocusEventHandler<HTMLButtonElement>
 }

@@ -1,18 +1,19 @@
-import {NextIntlClientProvider,hasLocale} from "next-intl";
-import {notFound} from "next/navigation";
-import {routing} from "@/i18n/routing";
+import { NextIntlClientProvider, hasLocale } from 'next-intl';
+import { notFound } from 'next/navigation';
+import { routing } from '@/i18n/routing';
 import "./globals.css"
-import Header from "@/modules/Header";
+import Header from '@/modules/Header';
+import { GlobalContextProvider } from '@/context/context';
+import ReactQueryProvider from '@/query/ReactQueryProvider';
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
   children,
-  params,
+  params
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = params;
-
+  const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
@@ -20,13 +21,17 @@ export default function LocaleLayout({
   return (
     <html lang={locale}>
       <head>
-        <title>Ashyo - Exam</title>
-        <link rel="shortcut icon" href="./logo.svg" type="image/x-icon" />
+        <link rel="icon" href="/logo.svg" />
+        <title>ASHYO Store</title>
       </head>
       <body>
-        <NextIntlClientProvider locale={locale}>
-          <Header/>
-          {children}
+        <NextIntlClientProvider>
+          <ReactQueryProvider>
+            <GlobalContextProvider>
+              <Header />
+              {children}
+            </GlobalContextProvider>
+          </ReactQueryProvider>
         </NextIntlClientProvider>
       </body>
     </html>

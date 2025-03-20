@@ -1,14 +1,16 @@
 import React from 'react'
 import HeaderTop from './HeaderTop'
-import HeaderCenter from "./HeaderCenter"
+import HeaderCenter from './HeaderCenter'
+import HeaderMobile from './HeaderMobile'
 
-const index = () => {
+const Header = () => {
   return (
     <header>
       <HeaderTop/>
       <HeaderCenter/>
+      <HeaderMobile/>
     </header>
   )
 }
 
-export default index
+export default Header
