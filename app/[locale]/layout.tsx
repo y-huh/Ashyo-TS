@@ -22,7 +22,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <head>
         <link rel="icon" href="/logo.svg" />
-        <title>ASHYO Store</title>
+        <title>Ashyo Exam</title>
       </head>
       <body>
         <NextIntlClientProvider>

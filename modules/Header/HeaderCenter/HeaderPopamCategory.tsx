@@ -16,7 +16,7 @@ const HeaderPopamCategory = () => {
     setActiveCategory(obj.id)
   }
   return (
-    <div className={`flex ${openCategory ? "h-[570px] border-[2px] border-slate-400" : "h-0 overflow-hidden"} duration-300 absolute w-full top-[96px] shadow-lg `}>
+    <div className={`flex ${openCategory ? "h-[570px] shadow-lg" : "h-0 overflow-hidden"} duration-300 absolute w-full top-[96px] shadow-lg `}>
       <ul className='w-[30%] space-y-[14px] py-[43px] px-[32px] h-[100%] bg-[#EBEFF3]'>
           {categoryList.map((item:CategoryType) => <li id={String(item.id)} onMouseEnter={() => handleShowCategoryChild(item)} key={item.id} className={`${activeCategory == item.id && "bg-[#134E9B] text-white"} rounded-[5px] text-[#454545] duration-300 cursor-pointer flex py-[12px] pl-[32px] items-center gap-[16px]`}>
             <Image className='w-[22px] h-[20px]' src={`${IMG_API}/${item.icon}`} alt='Category Icon' width={22} height={20} priority/>
