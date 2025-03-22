@@ -9,8 +9,7 @@ const nextConfig: NextConfig = {
         hostname: "api.ashyo.fullstackdev.uz",
       },
     ],
-  }
+  },
 };
 
-const withNextIntl = createNextIntlPlugin();
-export default withNextIntl(nextConfig);
+export default createNextIntlPlugin()(nextConfig);

@@ -17,12 +17,15 @@ import Button from '@/components/Button';
 
 const Hero = () => {
   const { data: banners } = getBanners();
+  console.log(banners);
+  
     const t = useTranslations("HeroContent")
   return (
     <div className="h-[450px] mt-5 bg-[#F3F0F0]">
       <div className="containers">
         <Swiper pagination={true} modules={[Pagination]} className="mySwiper ">
           {banners.map((item: BannerType) => (
+            
             <SwiperSlide className='p-5 ' key={item.id}>
             <div className="w-[596px] text-start">
               <h2 className="font-black text-[44px] text-[#0A1729] mb-[6px]">{item.name}</h2>
@@ -37,6 +40,9 @@ const Hero = () => {
               height={731}
               priority
             />
+
+            
+            
           </SwiperSlide>
           ))}
         </Swiper>
