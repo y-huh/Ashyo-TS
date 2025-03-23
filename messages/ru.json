@@ -10,6 +10,12 @@
     "inputPlaceholder":"Что Вы ищете?"
   },
   "HeroContent":{
-    "more":"Подробнее"
+    "more":"Подробно"
+  },
+  "Products":{
+    "title":"Самый популярный продукт",
+    "basket":"Корзина",
+    "more":"Много",
+    "discount":"Товары со скидкой"
   }
 }

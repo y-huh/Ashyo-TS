@@ -46,9 +46,22 @@
   .show-mobile{
     display: block !important; 
   }
+  .header-category{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
 }
 @media (max-width:360px){
   .hidden-small-mobile{
     display: none;
   }
+}
+
+.ant-skeleton-paragraph{
+  display: none !important; 
+}
+.ant-skeleton-title{
+  width: 100% !important;
 }

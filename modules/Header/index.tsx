@@ -6,7 +6,7 @@ import HeaderCategory from './HeaderCategory'
 
 const Header = () => {
   return (
-    <header>
+    <header className='pb-[29px]'>
       <HeaderTop/>
       <HeaderCenter/>
       <HeaderMobile/>

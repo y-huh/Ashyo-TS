@@ -36,7 +36,7 @@ const HeaderTop = () => {
   return (
     <div className='py-[11px] bg-[#EBEFF3] hidden sm:block'>
       <div className='containers flex items-center justify-between'>
-        <nav className='flex items-center gap-[28px]'>
+        <nav className='flex items-center gap-[15px] md:gap-[28px]'>
           {navList.map((item: HeaderTopNavListType) => <Link className='flex hover:text-[#134E9B] duration-300 items-center gap-[11px] text-[14px] leading-[130%] text-[#545D6A]' key={item.id} href={item.path}>
             <span>{item.icon && item.icon}</span>
             {item.title}
