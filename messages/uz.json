@@ -16,6 +16,37 @@
       "title":"Eng mashxur mahsulotlar",
       "basket":"Savatcha",
       "more":"Ko’proq",
-      "discount":"Aksiyadagi tovarlar"
+      "discount":"Aksiyadagi tovarlar",
+      "recently":"Oxirgi ko‘rgan mahsulot"
+    },
+    "Headphone":{
+      "title":"Musiqa zavqini his qilish uchun ko'p mablag' sarflash shart emas!",
+      "more":"Batafsil"
+    },
+    "Footer":{
+      "links":"Bizning ijtimoiy tarmoqlarda",
+      "apps":"Mobil ilovani yuklab oling",
+      "rights":"© 2022 Ashyo ro’hatdan otgan litsenzalangan bu brend.",
+      "menu":"Menyu",
+      "about":"Ashyo haqida",
+      "rules":"Foydalanish shartlari",
+      "privacy":"Maxfiylik va hafsizlik siyosati",
+      "return":"Mahsulotlarni va tovarlarni qaytarish siyosati",
+      "contactUs":"Biz bilan aloqa",
+      "contact":"Aloqa",
+      "questions":"Savolingiz bormi?",
+      "placeholder":" O’zingiz qiziqtirgan savollarni bering"
+    },
+    "SingleProducts": {
+      "price": "Narxi",
+      "debt": "Oyiga 456 999 uzsdan muddatli to'lov",
+      "saveContent": "Savtaga qo'shish",
+      "buy": "Xarid qilish",
+      "ship": "Yetkazib berish O'zbekiston bo'ylab",
+      "markat": "Do'kondan olib ketishingiz mumkin",
+      "watch": "Taxminiy yetkazib berish vaqti 1 kundan 3 kungacha......",
+      "recently":"Oxirgi ko‘rgan mahsulot"
     }
+    
+
   }

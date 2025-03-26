@@ -24,3 +24,8 @@ export interface CategoryType {
   subCategories: CategoryType[];
   updatedAt:string;
 }
+export interface FooterLinks {
+  id:number,
+  path:string,
+  icon:ReactNode | null
+}

@@ -16,6 +16,36 @@
     "title":"Most popular products",
     "basket":"Save",
     "more":"More",
-    "discount":"Discount products"
+    "discount":"Discount products",
+    "recently":"Recently viewed products"
+  },
+  "Headphone":{
+    "title":"You don't have to spend a lot of money to enjoy music!",
+    "more":"More"
+  },
+  "Footer":{
+    "links":"On our social networks",
+    "apps":"Download the mobile application",
+    "rights":"© 2022 Ashyo is a registered licensed brand.",
+    "menu":"Menu",
+    "about":"About Ashyo",
+    "rules":"Terms of use",
+    "privacy":"Privacy and security policy",
+    "return":"Products and goods return policy",
+    "contactUs":"Contact us",
+    "contact":"Contact",
+    "questions":"Do you have a question?",
+    "placeholder":"Ask your questions"
+  },
+  "SingleProducts": {
+    "price": "Price",
+    "debt": "Installment payment from 456,999 uzs per month",
+    "saveContent": "Add to cart",
+    "buy": "Buy product",
+    "ship": "Delivery throughout Uzbekistan",
+    "markat": "You can pick up the product from the store",
+    "watch": "Estimated delivery time is 1 to 3 days......",
+     "recently":"Recently viewed products"
   }
+  
 }

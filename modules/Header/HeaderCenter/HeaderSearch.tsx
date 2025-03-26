@@ -43,7 +43,7 @@ const HeaderSearch:FC<{isMobile?:boolean}> = ({isMobile}) => {
       setSearchValue("empty")
     }
    return (
-    <div className={`flex gap-[5px] sm:gap-[10px] ${isMobile ? "hidden-searchbar" :""}`}>
+    <div className={`flex gap-[5px] sm:gap-[10px]  ${isMobile ? "hidden-searchbar" :""}`}>
         <Button  onClick={() => setOpenCategory(!openCategory)} extraClass='!w-[35%] !h-[40px] sm:!w-[160px] sm:!h-[47px]' icon={<ArrowDownIcon extrClass={`${openCategory && "rotate-[180deg]"}`}/>} iconPosition={"right"}>{t("category")}</Button>
         <div className={`relative ${!isMobile && "w-[65%] sm:w-full"}`}>
             <Input value={value} onChange={(e) => handleSearch(e.target.value)} extraClass={`${!isMobile && "!w-full"}`} placeholder={t("inputPlaceholder")} type='text' name='search'/>

@@ -1,8 +1,10 @@
 import Brands from "@/modules/Brands";
 import Category from "@/modules/Category";
+import HeadphoneSection from "@/modules/Headphone";
 import Hero from "@/modules/Hero";
 import Products from "@/modules/Products";
 import DiscountProduct from "@/modules/Products/DiscountProducts";
+import RecentlyProducts from "@/modules/Products/RecentlyProducts";
 import { useTranslations } from "next-intl";
 
 export default function Home() {
@@ -16,6 +18,8 @@ export default function Home() {
         <Products title={t("title")} extraClass="hidden md:block"/>
         <Category/>
         <DiscountProduct title={t("discount")}/>
+        <HeadphoneSection/>
+        <RecentlyProducts title={t("recently")}/>
     </>
   );
 }
